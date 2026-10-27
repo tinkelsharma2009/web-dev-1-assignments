@@ -1,0 +1,80 @@
+h1{
+    font-style: oblique;
+    background-color: rgb(62, 31, 155);
+    
+    text-align: center;
+}
+nav{
+    background-color: rgb(183, 199, 35);
+    /* border-radius: 15%; */
+    border: 5px solid black;
+    
+}
+nav:hover{
+    background-color: rgb(64, 218, 72);
+}
+h2{color: crimson;
+    padding: 15px;
+    background-color:rgb(123, 131, 230);
+    /* display:table; */
+    border:5px dotted rgb(197, 19, 129);
+    text-align: center;
+    position: sticky;
+    top: 0px;
+
+}
+h3{
+    color: gold;
+    text-align:center;
+}
+li{
+    text-align: center;
+}
+.photo{
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 45%;
+    border-radius: 50%;
+}
+thead{
+    color:white;
+    background-color: blue;
+}
+.my_table{
+    text-align: center;
+    margin: auto;
+}
+label{
+    color: blue;
+    /* display: block;
+    text-align: center; */
+}
+/* input{
+     display: block;
+    text-align: center;
+} */
+ body{
+    background-color:honeydew;
+    border: 2px solid black;
+ }
+button{
+    color: rgb(158, 156, 156);
+    background-color: rgb(15, 30, 156);
+    /* display: block;
+    text-align: center; */
+    border-radius: 22%;
+    padding:12px;
+}
+button:hover{
+    background-color: chartreuse;
+}
+contact{
+    display: flex;
+    /* width:fit-content; */
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
