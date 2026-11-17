@@ -1,1 +1,252 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio of Tinkel Sharma</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="home">
+
+        <h1>Tinkel Sharma</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">MY PROJECTS</a></li>
+                <li><a href="#skills">MY SKILLS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+                <h2>Hello, I'm <span>Tinkel Sharma</span></h2>
+
+                <p class="hero-description">
+                    I'm passionate about learning web development.
+                    This is my personal portfolio website where I
+                    showcase my skills, projects and achievements.
+                </p>
+
+                <a href="#projects" class="hero-btn">
+                    Explore My Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT ME -->
+        <section class="section about" id="about">
+
+            <h2 class="section-title">ABOUT ME</h2>
+
+            <div class="about-container">
+
+                <div class="about-image">
+                    <img src="./me.jpeg" alt="Tinkel Sharma">
+                </div>
+
+                <div class="about-text">
+
+                    <h3>Hi, I'm Tinkel Sharma!</h3>
+
+                    <p>
+                        Aspiring Software Engineer passionate about
+                        programming and technology.
+                    </p>
+
+                    <p>
+                        C++ | Python | DSA
+                    </p>
+
+                    <p>
+                        Learning Full Stack Development and AI/ML.
+                    </p>
+
+                    <p>
+                        Strong Communicator and Passionate Learner.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section projects" id="projects">
+
+            <h2 class="section-title">MY PROJECTS</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Number Guessing Game</h3>
+                    <p>
+                        A fun number guessing game developed
+                        using C++.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Snake Water Gun Game</h3>
+                    <p>
+                        A simple interactive game developed
+                        using programming logic.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        My personal portfolio website built
+                        using HTML and CSS.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A project designed to manage student
+                        information and records.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Password Manager</h3>
+                    <p>
+                        A project for managing personal
+                        passwords.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="section skills" id="skills">
+
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C++</h3>
+                    <p>Beginner</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C</h3>
+                    <p>Intermediate</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+
+            <h2 class="section-title">CONTACT ME</h2>
+
+            <p class="contact-description">
+                Have a question or want to connect?
+                Feel free to send me a message!
+            </p>
+
+            <form action="/login" method="post">
+
+                <label for="name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Your Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Your Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- BACK TO TOP -->
+    <a href="#home" id="top">↑ Back to Top</a>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>&copy; 2026 Tinkel Sharma. All Rights Reserved.</p>
+
+        <p>Thank you for visiting my portfolio!</p>
+
+    </footer>
+
+</body>
+
+</html>

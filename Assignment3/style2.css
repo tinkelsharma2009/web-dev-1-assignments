@@ -1,0 +1,518 @@
+
+/* =================================
+   GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #25213a;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+section {
+    scroll-margin-top: 2rem;
+}
+
+
+/* =================================
+   HEADER AND NAVIGATION - FLEXBOX
+================================= */
+
+.header {
+    background: linear-gradient(135deg, #21145f, #7138a5);
+    color: white;
+    padding: 1.5rem 5%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-style: oblique;
+    letter-spacing: 0.15rem;
+    animation: slideDown 1s ease;
+}
+
+nav {
+    margin-top: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #7138a5;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 8%;
+    background: linear-gradient(
+        135deg,
+        #e9d5ff,
+        #fce7f3,
+        #dbeafe
+    );
+}
+
+.hero-content {
+    max-width: 55rem;
+    animation: fadeIn 1.5s ease;
+}
+
+.welcome {
+    color: #7138a5;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 1rem 0;
+    color: #25145c;
+}
+
+.hero h2 span {
+    color: #c0268b;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin: 1rem auto 2rem;
+    max-width: 40rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #7138a5;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #c0268b;
+    transform: scale(1.08);
+    box-shadow: 0 0.5rem 1rem #7138a555;
+}
+
+
+/* =================================
+   COMMON SECTION DESIGN
+================================= */
+
+.section {
+    width: 90%;
+    max-width: 75rem;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 1.5rem #00000012;
+    animation: fadeIn 1s ease;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #7138a5;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #c0268b;
+    margin: 0.6rem auto;
+    border-radius: 1rem;
+}
+
+
+/* =================================
+   ABOUT SECTION - FLEXBOX
+================================= */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about-image img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.4rem solid #c0268b;
+    box-shadow: 0 0 1.5rem #c0268b55;
+    transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 15rem;
+}
+
+.about-text h3 {
+    color: #c0268b;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin: 0.7rem 0;
+    font-size: 1.05rem;
+}
+
+
+/* =================================
+   PROJECTS SECTION - CSS GRID
+================================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: linear-gradient(
+        135deg,
+        #f3e8ff,
+        #fce7f3
+    );
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 0.4rem solid #7138a5;
+    transition: all 0.35s ease;
+}
+
+.project-card h3 {
+    color: #7138a5;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    color: #49405d;
+}
+
+.project-card:hover {
+    transform: translateY(-0.6rem);
+    box-shadow: 0 0.7rem 1.5rem #7138a533;
+    border-left-color: #c0268b;
+}
+
+
+/* =================================
+   SKILLS SECTION - CSS GRID
+================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-card {
+    text-align: center;
+    padding: 1.5rem 0.8rem;
+    background-color: #f3e8ff;
+    border-radius: 0.8rem;
+    border-bottom: 0.3rem solid #7138a5;
+    transition: all 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #7138a5;
+    font-size: 1.3rem;
+}
+
+.skill-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.skill-card:hover {
+    background-color: #7138a5;
+    color: white;
+    transform: scale(1.05);
+}
+
+.skill-card:hover h3,
+.skill-card:hover p {
+    color: white;
+}
+
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact-description {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    color: #7138a5;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 0.1rem solid #d6c4e8;
+    border-radius: 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #faf7ff;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c0268b;
+    box-shadow: 0 0 0.5rem #c0268b55;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: linear-gradient(135deg, #7138a5, #c0268b);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem #7138a555;
+    background: linear-gradient(135deg, #c0268b, #7138a5);
+}
+
+
+/* =================================
+   BACK TO TOP BUTTON
+================================= */
+
+#top {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    background-color: #7138a5;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 0.3rem 0.8rem #00000033;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+#top:hover {
+    background-color: #c0268b;
+    transform: translateY(-0.3rem);
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #21145f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+
+/* =================================
+   KEYFRAME ANIMATIONS
+================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =================================
+   TABLET RESPONSIVE DESIGN
+================================= */
+
+@media (min-width: 600px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+}
+
+
+/* =================================
+   DESKTOP RESPONSIVE DESIGN
+================================= */
+
+@media (min-width: 900px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 8%;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+}
+
+
+/* =================================
+   SMALL MOBILE SCREEN
+================================= */
+
+@media (max-width: 400px) {
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .section {
+        padding: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #top {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+}
